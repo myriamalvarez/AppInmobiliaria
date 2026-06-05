@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.myrsoft.appinmobiliariamovil.R;
@@ -45,6 +46,7 @@ public class AgregarInmuebleFragment extends Fragment {
         vm = new ViewModelProvider(this).get(AgregarInmuebleViewModel.class);
 
         abrirGaleria();
+        inicializarSpinners();
 
         binding.btnSeleccionarFoto.setOnClickListener(new View.OnClickListener() {
             @Override
